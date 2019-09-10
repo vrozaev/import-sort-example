@@ -1,0 +1,19 @@
+{
+  "name": "import-sort-example",
+  "version": "1.0.0",
+  "description": "Examplee of import-sort usage",
+  "scripts": {
+    "sort-imports": "cp -R import-sort-custom ./node_modules/ && ./node_modules/import-sort-cli/lib/index.js --write src/**/*.js"
+  },
+  "dependencies": {
+    "import-sort": "^6.0.0",
+    "import-sort-cli": "^6.0.0",
+    "import-sort-config": "^6.0.0"
+  },
+  "importSort": {
+    ".js": {
+      "parser": "babylon",
+      "style": "import-sort-custom"
+    }
+  }
+}
