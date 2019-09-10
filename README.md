@@ -1,0 +1,1 @@
+Run `npm install && npm run sort-imports` and look at `src/index.js` changes.
